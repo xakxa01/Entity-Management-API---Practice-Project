@@ -22,8 +22,8 @@ Esta API permite realizar operaciones CRUD (Crear, Leer, Actualizar y Eliminar) 
 1. **Clona el repositorio:**
 
    ```bash
-   git clone https://github.com/tu_usuario/tu_repositorio.git
-   cd tu_repositorio
+   git clone https://github.com/xakxa01/Entity-Management-API---Practice-Project.git
+   cd Entity-Management-API---Practice-Project
    ```
 
 2. **Instala las dependencias:**
