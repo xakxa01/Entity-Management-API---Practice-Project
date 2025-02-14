@@ -1,0 +1,63 @@
+@baseUrl = http://localhost:3000/api/entities
+
+### obtener datos con paginacion
+GET {{baseUrl}}?page=1&limit=10
+Content-Type: application/json
+
+###
+
+### obtener todos los entity 
+GET {{baseUrl}}
+Content-Type: application/json
+
+###
+
+### crear un nuevo entity
+POST {{baseUrl}}
+Content-Type: application/json
+
+{
+  "entity_id": "entity_3",
+  "client_id": "client_1",
+  "type": "Luz",
+  "data": { 
+		"state": "on",
+		"brightness": 230,
+		"friendly_name": "test"
+	},
+  "last_updated": "2025-02-14T12:00:00Z",
+  "last_reported": "2025-02-14T12:00:00Z",
+  "last_changed": "2025-02-14T12:00:00Z"
+}
+
+###
+
+### obtener el entity creado
+GET {{baseUrl}}/entity_1
+Content-Type: application/json
+
+###
+
+### actualizar el entity
+PUT {{baseUrl}}/entity_1
+Content-Type: application/json
+
+{
+	"type": "Switch",
+	"data": { 
+		"state": "off",
+		"friendly_name": "testtt"
+	},
+}
+
+###
+
+### eliminar el entity
+DELETE {{baseUrl}}/entity_1
+Content-Type: application/json
+
+###
+
+### intentar obtener el entity eliminado
+GET {{baseUrl}}/entity_1
+Content-Type: application/json

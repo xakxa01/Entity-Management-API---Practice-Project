@@ -1,0 +1,33 @@
+{
+  "name": "prueba-tecnica-api-rest",
+  "version": "1.0.0",
+  "main": "src/app.ts",
+  "scripts": {
+    "start": "node --experimental-transform-types --watch  src/app.ts"
+  },
+  "author": "Carlos Xavier Gomez Barriento",
+  "type": "module",
+  "dependencies": {
+    "better-sqlite3": "11.8.1",
+    "dotenv": "16.4.7",
+    "express": "4.21.2",
+    "zod": "3.24.2"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "7.6.12",
+    "@types/cors": "2.8.17",
+    "@types/express": "5.0.0",
+    "@types/morgan": "1.9.9",
+    "@types/node": "22.13.2",
+    "cors": "2.8.5",
+    "morgan": "1.10.0"
+  },
+  "engines": {
+    "node": ">=22.7.10"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "better-sqlite3"
+    ]
+  }
+}

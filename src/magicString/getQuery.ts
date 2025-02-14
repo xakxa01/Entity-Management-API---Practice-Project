@@ -1,0 +1,1 @@
+export const getQuery = `SELECT * FROM entities WHERE entity_id = ?`
