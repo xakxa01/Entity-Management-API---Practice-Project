@@ -17,7 +17,7 @@ export const createEntity = async (req: Request, res: Response): Promise<void> =
 
 		const existingEntity = db.prepare('SELECT entity_id FROM entities WHERE entity_id = ?').get(entity_id);
 		if (existingEntity) {
-			res.status(409).json({ error: 'Entidad con la misma entidad_id ya existe' });
+			res.status(409).json({ error: 'entidad con la misma entidad_id ya existe' });
 			return;
 		}
 

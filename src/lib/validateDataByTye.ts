@@ -15,6 +15,9 @@ export const validateDataByType = (type: string, data: unknown) => {
 				message: 'Tipo de entidad no soportado.',
 				path: ['type'],
 			};
-			return { success: false, error: new ZodError([error]) };
+			return {
+				success: false,
+				error: new ZodError([error])
+			};
 	}
 }
